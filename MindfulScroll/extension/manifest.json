@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "MindfulScroll",
+  "version": "1.0",
+  "description": "Track and limit your time spent on websites",
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "alarms"
+  ],
+  "host_permissions": [
+    "http://localhost:3000/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["timeLimitNotification.js", "content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+} 

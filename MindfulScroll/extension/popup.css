@@ -1,0 +1,157 @@
+body {
+  width: 400px;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+  color: #2563eb;
+  font-size: 24px;
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #1f2937;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+.websites-list {
+  background-color: #f3f4f6;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.website-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.website-item button {
+  background-color: #ef4444;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.website-item button:hover {
+  background-color: #dc2626;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+#timeLimitPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #1f2937;
+  width: 300px;
+  z-index: 1000;
+}
+
+#timeLimitPopup.hidden {
+  display: none;
+}
+
+#timeLimitPopup h2 {
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+#timeLimitPopup p {
+  margin-bottom: 15px;
+  color: #4b5563;
+}
+
+.popup-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+#continueBtn, #dashboardBtn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  min-width: 120px;
+}
+
+#continueBtn {
+  background-color: #10b981;
+  color: white;
+}
+
+#continueBtn:hover {
+  background-color: #059669;
+}
+
+#dashboardBtn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#dashboardBtn:hover {
+  background-color: #45a049;
+} 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MindfulScroll</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>MindfulScroll</h1>
+    
+    <div class="form-group">
+      <h2>Track Website</h2>
+      <input type="text" id="websiteInput" placeholder="Enter website URL">
+      <input type="number" id="timeLimit" placeholder="Time limit (minutes)">
+      <button id="addWebsite">Add Website</button>
+    </div>
+
+    <div class="websites-list">
+      <h2>Tracked Websites</h2>
+      <div id="websitesList"></div>
+    </div>
+  </div>
+
+  <div id="overlay" class="overlay hidden"></div>
+  <div id="timeLimitPopup" class="hidden">
+    <h2>Time Limit Reached</h2>
+    <p>You've reached your time limit for <span id="limitUrl"></span></p>
+    <div class="popup-buttons">
+      <button id="continueBtn">Continue Anyway</button>
+      <button id="dashboardBtn">View Dashboard</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html> 
